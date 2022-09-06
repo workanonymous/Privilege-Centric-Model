@@ -12,7 +12,8 @@ DEFINITIONS
     priv_mem == mem_type~[dom(mem_priv_diff)];
     gate_mem == mem_type~[gate_type];
     normal_mem == mem - (priv_mem \/ gate_mem);
-    SET_PREF_MAX_INITIALISATIONS == 1
+    SET_PREF_MAX_INITIALISATIONS == 1;
+    SET_PREF_MAX_OPERATIONS == 200000
 INVARIANT
     (tag : TAG) &
     (mem <: MEM) &
